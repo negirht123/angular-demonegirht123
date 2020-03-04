@@ -1,0 +1,35 @@
+<p>signup works!</p>
+<form [formGroup]="signUpForm" (submit)="signUp()" name="signup">
+    <div class="row">
+        signup
+    </div>
+    <div class="form-group row">
+        <mat-form-field appearance="outline">
+            <mat-label>Email</mat-label>
+            <input matInput formControlName="name" placeholder="Full Name">
+        </mat-form-field>
+    </div>
+    <div class="form-group row">
+        <mat-form-field appearance="outline">
+            <mat-label>Email</mat-label>
+            <input matInput formControlName="email" placeholder="Email">
+        </mat-form-field>
+    </div>
+    <div class="form-group">
+        <mat-form-field appearance="outline">
+            <mat-label>Password</mat-label>
+            <input matInput formControlName="password" type="password" placeholder="Password">
+        </mat-form-field>
+    </div>
+    <div class="form-group">
+        <div class="pro-input-bx">
+            <mat-form-field appearance="outline">
+                <mat-label>Confirm Password</mat-label>
+                <input matInput formControlName="confirmPassword" type="password" placeholder="Password">
+            </mat-form-field>
+        </div>
+    </div>
+
+
+    <button class="pro-btn-1 text-uppercase full-width-btn yellow-btn text-uppercase">Register</button>
+</form>
